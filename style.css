@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+}
+header ul li button{
+    background-color:#13cebe;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.search {
+    width: 100%;
+    padding: 13px;
+    border-radius: 22px;
+    border: 1px solid#ccc;
+    outline: none;
+    font-size: 16px;
+}
+.icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 17px 14px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.buttons button:hover{
+    border: 1px solid #ccc;
+}
+.leng{
+    margin-top: 15px;
+}
+.footer-area{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+}
+.footer-menu ul{
+    display: flex;
+
+}
+.footer-menu ul li{
+    list-style: none;
+    
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    margin-right: 25px;
+}
+/* mobile view stsrt */
+@media(max-width:768px){
+    .searchbox {
+        width: 75%;
+        margin-left: -36px;
+    }
+    .main img{
+        max-width: 148px;
+    }
+    .footer-menu ul {
+        display: block;
+    }
+    .footer-menu ul li a {
+        font-size: 15px;
+        margin-right: 40px;
+        line-height: 18px;
+    }
+    header {
+        width: 85%;
+    }
+    header ul li a {
+        font-size: 14px;
+    }
+}
+
+
+/* mobile view end */
